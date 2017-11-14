@@ -5,18 +5,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import java.io.FileNotFoundException;
-import java.nio.InvalidMarkException;
+import com.crashlytics.android.Crashlytics;
+
 import java.security.AccessControlException;
-import java.sql.SQLException;
-import java.time.zone.ZoneRulesException;
-import java.util.IllegalFormatException;
+
+import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
+
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.button_crash_1).setOnClickListener(new View.OnClickListener() {
