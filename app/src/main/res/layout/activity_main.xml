@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.robert.example.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_crash_1"
+            android:layout_width="256dp"
+            android:layout_height="128dp"
+            android:text="@string/crash_1" />
+
+        <Button
+            android:id="@+id/button_crash_2"
+            android:layout_width="256dp"
+            android:layout_height="128dp"
+            android:text="@string/crash_2" />
+
+        <Button
+            android:id="@+id/button_crash_3"
+            android:layout_width="256dp"
+            android:layout_height="128dp"
+            android:text="@string/crash_3" />
+
+    </LinearLayout>
+</RelativeLayout>
